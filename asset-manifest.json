@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/task-master/static/css/main.cd22f629.css",
-    "main.js": "/task-master/static/js/main.b7368cee.js",
+    "main.js": "/task-master/static/js/main.aa1bdf98.js",
     "static/js/787.fdfac0bf.chunk.js": "/task-master/static/js/787.fdfac0bf.chunk.js",
     "static/media/kanit-regular-webfont.woff2": "/task-master/static/media/kanit-regular-webfont.2b38d7bb4d65b1cee278.woff2",
     "static/media/kanit-medium-webfont.woff2": "/task-master/static/media/kanit-medium-webfont.21235fe7b33f7841db38.woff2",
@@ -10,11 +10,11 @@
     "static/media/kanit-black-webfont.woff2": "/task-master/static/media/kanit-black-webfont.1522fb74c254ec333761.woff2",
     "index.html": "/task-master/index.html",
     "main.cd22f629.css.map": "/task-master/static/css/main.cd22f629.css.map",
-    "main.b7368cee.js.map": "/task-master/static/js/main.b7368cee.js.map",
+    "main.aa1bdf98.js.map": "/task-master/static/js/main.aa1bdf98.js.map",
     "787.fdfac0bf.chunk.js.map": "/task-master/static/js/787.fdfac0bf.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.cd22f629.css",
-    "static/js/main.b7368cee.js"
+    "static/js/main.aa1bdf98.js"
   ]
 }
