@@ -1,0 +1,20 @@
+// version of the rules we're using
+rules_version = '2';
+
+// what service we're writing rules for because we can also write rules for other servcies
+service cloud.firestore {
+  // this is the 'base path' into the db which is always present and matches against any request 
+  // coming in to the db, it will match all db requests we make
+  match /databases/{database}/documents {
+    
+    // this is where we create additional paths with specific rules for our collections,
+    // so we'd create these match statements for any collection that we have so that we 
+    // can tailor rules for each collection, we can play around with these rules and 
+    // publish them right here or we can edit rules locally in our projects and then
+    // deploy them to firebase when we're done
+    match /tasks/{document=**} {
+      // read access means that we can make a requset to fetch documents from the db and write access means we can make request to create, delete and also update documents in the db
+      allow read, write;
+    }
+  }
+}

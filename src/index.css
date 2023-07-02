@@ -1,0 +1,214 @@
+:root {
+  --onePx: 0.063rem;
+  --twoPx: 0.125rem;
+  --threePx: 0.188rem;
+  --fourPx: 0.25rem;
+  --fivePx: 0.313rem;
+  --sixPx: 0.375rem;
+  --sevenPx: 0.438rem;
+  --eightPx: 0.5rem;
+  --tenPx: 0.625rem;
+  --twelevePx: 0.75rem;
+  --fourteenPx: 0.875rem;
+  --sixteenPx: 1rem;
+  --twentyPx: 1.25rem;
+  --fourtyPx: 2.5rem;
+  --thirtyPx: 1.875rem;
+  --fiftyPx: 3.125rem;
+  --seventyPx: 4.375rem;
+  --ninetyPx: 5.625rem;
+  --oneHundredPx: 6.25rem;
+  --threeHundredPx: 18.75rem;
+  --fourHundredPx: 25rem;
+  --sixHundredPx: 37.5rem;
+  --sixHundredFortyPx: 40rem;
+}
+
+@font-face {
+  font-family: 'Kanit';
+  font-weight: 900;
+  src: url('./fonts/kanit-black-webfont.woff2') format('woff2'),
+    url('./fonts/kanit-black-webfont.woff2') format('woff');
+}
+
+@font-face {
+  font-family: 'Kanit';
+  font-weight: 700;
+  src: url('./fonts/kanit-bold-webfont.woff2') format('woff2'),
+    url('./fonts/kanit-bold-webfont.woff2') format('woff');
+}
+
+@font-face {
+  font-family: 'Kanit';
+  font-weight: 500;
+  src: url('./fonts/kanit-medium-webfont.woff2') format('woff2'),
+    url('./fonts/kanit-medium-webfont.woff2') format('woff');
+}
+
+@font-face {
+  font-family: 'Kanit';
+  font-weight: 400;
+  src: url('./fonts/kanit-regular-webfont.woff2') format('woff2'),
+    url('./fonts/kanit-regular-webfont.woff2') format('woff');
+}
+
+@font-face {
+  font-family: 'Kanit';
+  font-weight: 300;
+  src: url('./fonts/kanit-light-webfont.woff2') format('woff2'),
+    url('./fonts/kanit-light-webfont.woff2') format('woff');
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Kanit', sans-serif;
+  font-weight: 300;
+  background: #000;
+}
+
+#root {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  min-height: 100vh;
+  margin: 0;
+  padding: var(--twentyPx);
+}
+
+.wrapper {
+  border: var(--onePx) solid #ddd;
+  max-width: var(--sixHundredFortyPx);
+  width: var(--sixHundredPx);
+  margin: 0 auto;
+  overflow: hidden;
+  padding: var(--thirtyPx);
+  background: #fff;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: var(--twentyPx) 0;
+}
+
+h1 {
+  font-weight: 500;
+  color: #000;
+}
+
+.btn {
+  padding: var(--twelevePx) var(--twentyPx);
+  border-radius: var(--threePx);
+  display: inline-block;
+  background: #000;
+  font-weight: 700;
+  cursor: pointer;
+  color: #fff;
+}
+
+.btn-block {
+  display: block;
+}
+
+.task {
+  background: #F0F0F0;
+  margin: var(--fivePx) 0;
+  padding: var(--sixteenPx) var(--twentyPx);
+  border: solid var(--onePx) #ddd;
+  margin: var(--tenPx) 0;
+  cursor: pointer;
+}
+
+.task:hover {
+  animation: grow 0.4s linear;
+}
+
+@keyframes grow {
+  0% {
+    transform: scale(1)
+  }
+
+  50% {
+    transform: scale(1.1)
+  }
+
+  100% {
+    transform: scale(1)
+  }
+}
+
+.task.reminder h3 {
+  padding-left: var(--fivePx);
+}
+
+.task h3 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: 400;
+  padding-bottom: var(--fourPx);
+}
+
+.task p:last-child {
+  margin-top: var(--threePx);
+}
+
+.task:hover p {
+  color: #FFA500;
+}
+
+.add-form {
+  margin-bottom: var(--thirtyPx);
+}
+
+.form-control {
+  margin: var(--tenPx) 0;
+}
+
+.form-control label {
+  display: block;
+  padding: var(--fivePx);
+  font-weight: 400;
+  color: #000;
+}
+
+.form-control input {
+  width: 100%;
+  height: var(--fortyPx);
+  margin: var(--fivePx);
+  padding: var(--tenPx);
+  font-size: var(--sixteenPx);
+  outline: none;
+  border: var(--twoPx) solid #ddd;
+}
+
+.form-control input::placeholder {
+  font-size: var(--fourteenPx);
+  opacity: 0.7;
+}
+
+.react-datepicker-wrapper {
+  display: block !important;
+}
+
+.form-control input#check {
+  width: var(--thirtyPx);
+  vertical-align: middle;
+}
+
+.form-control-check label {
+  display: inline;
+  vertical-align: middle;
+}
+
+.form-control-check input {
+  height: var(--twentyPx);
+}
+
+
