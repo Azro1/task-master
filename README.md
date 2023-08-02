@@ -1,3 +1,5 @@
 # Task Master
 
-## Mini todo app website build with React js and Firebase Cloud Firestore
+## Mini todo app website that help with managing everyday tasks
+
+Build with React js and Firebase Cloud Firestore
